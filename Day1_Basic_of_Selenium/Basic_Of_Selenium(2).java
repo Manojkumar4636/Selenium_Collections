@@ -15,10 +15,6 @@ public class SeleiumBasic1 {
 	TestCase2: Visit Google Home Page: "https://www.google.co.in"
 	TestCase3: Google Search The "Goa trip budget" 
 	TestCase4: Then Click "ENTER"
-	TestCase5: Navigate to search result related WebSite
-	TestCase6: Then Click the Some Links that page
-	TestCase7: Back to previous WebPage
-	TestCase8: close the project
 	*/		 
 	public static void main(String[] args) {
 		
@@ -32,7 +28,5 @@ public class SeleiumBasic1 {
 		WebElement searchBox = driver.findElement(By.name("q"));
 		searchBox.sendKeys("Goa trip budget"+Keys.ENTER);
 		
-		//Quit the project
-		driver.quit();
 	}
 }
