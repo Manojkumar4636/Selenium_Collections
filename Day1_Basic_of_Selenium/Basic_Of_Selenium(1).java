@@ -68,7 +68,7 @@ public class SeleniumBasic {
 	*/		 
 	public static void main(String[] args) {
 		
-		                    //Browser Name              Browser Path
+		                    //Your Browser Name              Your Browser Path
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
 		
 		//Create a Object
