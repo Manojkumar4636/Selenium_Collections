@@ -24,6 +24,7 @@ public class SeleiumBasic1 {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(); //Upcasting Method
+		
 		//get() - To load the URL to WebPage
 		driver.get("http://www.google.co.in"); 
 		
@@ -31,17 +32,7 @@ public class SeleiumBasic1 {
 		WebElement searchBox = driver.findElement(By.name("q"));
 		searchBox.sendKeys("Goa trip budget"+Keys.ENTER);
 		
-		//Navigate to Current WebPage to another WebPage
-		driver.navigate().to("https://www.yatra.com/india-tour-packages/affordable-holidays-in-goa");
-		
-		//Click the Link
-		WebElement clickLink = driver.findElement(By.linkText("Short Trip to Goa - Weekend Getaway (Ex Pune)"));
-		clickLink.click();	
-		
-		//Back to previous WebPage
-		driver.navigate().back();
-		
-		//Close the project
+		//Quit the project
 		driver.quit();
 	}
 }
