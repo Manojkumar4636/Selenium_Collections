@@ -16,14 +16,14 @@ public class SeleiumBasic1 {
 	TestCase3: Google Search The "Goa trip budget" 
 	TestCase4: Then Click "ENTER"
 	TestCase5: Navigate to search result related WebSite
-	TestCase6: Then Click the Some Links that page
-	TestCase7: Back to previous WebPage
-	TestCase8: close the project
+	TestCase6: Back to previous WebPage
+	TestCase7: Quit the project
 	*/		 
 	public static void main(String[] args) {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(); //Upcasting Method
+		
 		//get() - To load the URL to WebPage
 		driver.get("http://www.google.co.in"); 
 		
@@ -32,16 +32,12 @@ public class SeleiumBasic1 {
 		searchBox.sendKeys("Goa trip budget"+Keys.ENTER);
 		
 		//Navigate to Current WebPage to another WebPage
-		driver.navigate().to("https://www.yatra.com/india-tour-packages/affordable-holidays-in-goa");
-		
-		//Click the Link
-		WebElement clickLink = driver.findElement(By.linkText("Short Trip to Goa - Weekend Getaway (Ex Pune)"));
-		clickLink.click();	
+		driver.navigate().to("https://www.yatra.com/india-tour-packages/affordable-holidays-in-goa");	
 		
 		//Back to previous WebPage
 		driver.navigate().back();
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 	}
 }
