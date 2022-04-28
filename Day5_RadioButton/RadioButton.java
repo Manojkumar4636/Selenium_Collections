@@ -11,7 +11,7 @@ TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practic
 TestCase3: Click YES or NO button
 TestCase4: Find default selected radio button
 TestCase5: Select your age group
-TestCase6: Close the project
+TestCase6: Quit the project
 */
 public class RadioButtonExample {
 
