@@ -14,7 +14,7 @@ public class TextBoxExample {
 	TestCase5: 3rd TextBox Get default text
 	TestCase6: 4th TextBox Clear the text
 	TestCase7: 5th Confirm that edit field is disabled
-	TestCase8: Close the project
+	TestCase8: Quit the project
 	*/
 	public static void main(String[] args) throws InterruptedException {
 		
