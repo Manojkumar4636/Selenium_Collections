@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 /*
 TestCase1: Open Chrome Browser.
-TestCase2: Visit the WebSite: "http://www.leafground.com/pages/radio.html"
+TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/radio.html"
 TestCase3: Click YES or NO button
 TestCase4: Find default selected radio button
 TestCase5: Select your age group
@@ -17,7 +17,7 @@ public class RadioButtonExample {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/radio.html");
 		
@@ -38,7 +38,7 @@ public class RadioButtonExample {
 		WebElement findSelectButton2 = driver.findElement(By.xpath("//input[@name=\"age\"][@value=\"0\"]"));
 		findSelectButton2.click();
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 		
 	}
