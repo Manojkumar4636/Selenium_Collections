@@ -11,17 +11,17 @@ import org.openqa.selenium.support.ui.Select;
 public class DropDownExample {
     /*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/Dropdown.html"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Dropdown.html"
 	TestCase3: Select training Program using Index
 	TestCase4: Select training Program using VisibleText
 	TestCase5: Select training Program using Value
 	TestCase6: SendKeys use to select 
 	TestCase7: Multi select 
-	TestCase8: Close the project
+	TestCase8: Quit the project
 	*/	
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/Dropdown.html");
 
@@ -59,7 +59,7 @@ public class DropDownExample {
 		select4.selectByIndex(2);
 		select4.selectByIndex(3);
 		
-		//Close the project
+		//Quit the project
 		
 		driver.quit();	
 	}
