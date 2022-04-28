@@ -44,7 +44,7 @@ public class TextBoxExample {
 		boolean enabled = enabledOrNot.isEnabled();
 		System.out.println("Enabled or Disabled: "+enabled);
 		
-		//Close the project
+		//Quit the project
 		driver.quit();	
 	}
 
