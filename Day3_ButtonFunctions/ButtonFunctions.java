@@ -20,7 +20,7 @@ public class ButtonsExample {
 	*/
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "YOUR CHROMEDRIVER PATH ENTER");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Button.html");
 		
@@ -50,7 +50,7 @@ public class ButtonsExample {
 		int width = size.getWidth();
 		System.out.println("Height is: "+height+" Width is: "+width);
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 		
 	}
