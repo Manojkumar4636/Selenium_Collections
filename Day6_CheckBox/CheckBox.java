@@ -7,18 +7,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 /*
 TestCase1: Open Chrome Browser.
-TestCase2: Visit the WebSite: "http://www.leafground.com/pages/checkbox.html"
+TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/checkbox.html"
 TestCase3: Select JAVA CheckBox
 TestCase4: Confirm Selenium is checked
 TestCase5: Checked Empty box and DeSelect checkedBox
 TestCase6: Select all below CheckBoxes
-TestCase7: Close the project
+TestCase7: Quit the project
 */
 public class CheckBoxExample {
 	
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/checkbox.html");
 		
@@ -49,7 +49,7 @@ public class CheckBoxExample {
 	    WebElement option3 = driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[4]/div[3]/input"));
 	    option3.click();
 	    
-	    //Close the project
+	    //Quit the project
 	    driver.quit(); 
 	}
 
