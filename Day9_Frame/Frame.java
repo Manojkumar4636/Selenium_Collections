@@ -11,15 +11,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class FrameExample {
 	/*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/frame.html"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/frame.html"
 	TestCase3: Click inside a frame button
 	TestCase4: Click inside a nested frame button
 	TestCase5: Find total number of frames.
-	TestCase6: Close the project
+	TestCase6: Quit the project
 	*/
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/frame.html");
 		
@@ -47,7 +47,7 @@ public class FrameExample {
 		int size = findElements.size();
 		System.out.println("Total Size: "+size);
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 
 		
