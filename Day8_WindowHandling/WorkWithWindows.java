@@ -10,16 +10,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WorkWithWindowsExample {
 	/*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/Window.html"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Window.html"
 	TestCase3: Click button to open home page in New Window
     TestCase4: Find the number of opened windows
     TestCase5: Close all windows except Parent Windows
     TestCase6: Wait for 2 new Windows to open
-    TestCase7: Close the project
+    TestCase7: Quit the project
 	 */
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/Window.html");
 
@@ -77,7 +77,7 @@ public class WorkWithWindowsExample {
 			}
 		}
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 	}
 
