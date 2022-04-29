@@ -18,7 +18,7 @@ public class TextBoxExample {
 	*/
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Edit.html");
 		
