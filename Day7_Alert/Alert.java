@@ -9,16 +9,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class AlertExample {
     /*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/Alert.html"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Alert.html"
 	TestCase3: Click the button to display a alert box.
 	TestCase4: Click the button to display a confirm box.
 	TestCase5: Click the button to display a prompt box.
 	TestCase6: Click the below button and click OK.
-    TestCase7: Close the project
+        TestCase7: Quit the project
 	*/
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/Alert.html");
 		
@@ -51,7 +51,7 @@ public class AlertExample {
 		WebElement happy = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/button"));
 		happy.click();
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 	}
 
