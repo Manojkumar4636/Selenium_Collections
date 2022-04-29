@@ -12,10 +12,10 @@ public class WorkWithWindowsExample {
 	TestCase1: Open Chrome Browser.
 	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Window.html"
 	TestCase3: Click button to open home page in New Window
-    TestCase4: Find the number of opened windows
-    TestCase5: Close all windows except Parent Windows
-    TestCase6: Wait for 2 new Windows to open
-    TestCase7: Quit the project
+        TestCase4: Find the number of opened windows
+        TestCase5: Close all windows except Parent Windows
+        TestCase6: Wait for 2 new Windows to open
+        TestCase7: Quit the project
 	 */
 	public static void main(String[] args) {
 
