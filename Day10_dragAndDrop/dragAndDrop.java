@@ -11,11 +11,11 @@ public class DroppableExample {
 	TestCase1: Open Chrome Browser.
 	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/drop.html"
 	TestCase3: Play with Droppable
-	TestCase4: Close the project
+	TestCase4: Quit the project
 	*/
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/drop.html");
 		
@@ -27,7 +27,7 @@ public class DroppableExample {
 		
 		action.dragAndDrop(from, to).build().perform();
 		
-		//close the project
+		//Quit the project
 		driver.quit();
 	}
 }
