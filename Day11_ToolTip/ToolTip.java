@@ -8,13 +8,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ToolTipExample {
     /*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/tooltip.html"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/tooltip.html"
 	TestCase3: Find ToolTip Value
-	TestCase4: Close the project
+	TestCase4: Quit the project
 	*/
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/tooltip.html");
 		
@@ -23,7 +23,7 @@ public class ToolTipExample {
 		String attribute = toolTip.getAttribute("title");
 		System.out.println("ToolTip Value: "+attribute);
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 	}
 }
