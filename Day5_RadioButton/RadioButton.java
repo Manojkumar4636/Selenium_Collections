@@ -19,7 +19,7 @@ public class RadioButtonExample {
 		
 		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.leafground.com/pages/radio.html");
+		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/radio.html");
 		
 		//Click YES or NO button
 		WebElement clickYes = driver.findElement(By.id("yes"));
