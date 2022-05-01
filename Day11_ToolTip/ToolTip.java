@@ -16,7 +16,7 @@ public class ToolTipExample {
 		
 		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.leafground.com/pages/tooltip.html");
+		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/tooltip.html");
 		
 		//Find ToolTip Value
 		WebElement toolTip = driver.findElement(By.id("age"));
