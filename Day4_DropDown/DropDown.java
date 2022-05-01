@@ -23,7 +23,7 @@ public class DropDownExample {
 		
 		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.leafground.com/pages/Dropdown.html");
+		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Dropdown.html");
 
 		//Select training Program using Index, index start with 0 to n-1
 		WebElement dropDown1 = driver.findElement(By.id("dropdown1"));
