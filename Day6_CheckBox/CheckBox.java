@@ -20,7 +20,7 @@ public class CheckBoxExample {
 		
 		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.leafground.com/pages/checkbox.html");
+		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/checkbox.html");
 		
 		//Select JAVA CheckBox
 		WebElement javaClick = driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[1]/div[1]/input"));
