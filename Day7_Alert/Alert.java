@@ -20,7 +20,7 @@ public class AlertExample {
 		
 		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.leafground.com/pages/Alert.html");
+		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Alert.html");
 		
 		//Click the button to display a alert box.
 		WebElement alert1 = driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[1]/div/div/button"));
