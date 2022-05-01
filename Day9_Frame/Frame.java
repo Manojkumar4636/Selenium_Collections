@@ -21,7 +21,7 @@ public class FrameExample {
 		
 		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.leafground.com/pages/frame.html");
+		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/frame.html");
 		
 		//Click inside a frame button
 		driver.switchTo().frame(0);
