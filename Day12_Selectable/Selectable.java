@@ -15,11 +15,11 @@ public class SelectableExample {
 	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/selectable.html"
 	TestCase3: Find Total elements size
 	TestCase4: Select first 3 elements in the list of 7 elements
-	TestCase5: Close the project.
+	TestCase5: Quit the project.
 	*/
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/selectable.html");
 		
@@ -31,7 +31,7 @@ public class SelectableExample {
 		//Select first 3 elements in the list of 7 elements
 		Actions action = new Actions(driver);
 		
-/*      action.keyDown(Keys.CONTROL)
+/*               action.keyDown(Keys.CONTROL)
 		.click(selectable.get(0))
 		.click(selectable.get(1))
 		.click(selectable.get(2)).build().perform();		
@@ -40,7 +40,7 @@ public class SelectableExample {
 		action.clickAndHold(selectable.get(1));
 		action.clickAndHold(selectable.get(2)).build().perform();
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 		
 		}
