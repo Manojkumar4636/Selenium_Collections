@@ -16,7 +16,7 @@ public class UploadExample {
     /*
 	TestCase1: Open Chrome Browser.
 	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/upload.html"
-	TestCase3: Upload the file
+	TestCase3: Upload the file use sendKeys.
 	TestCase4: Quit the project.
 	*/
 	public static void main(String[] args) {
