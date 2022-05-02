@@ -15,21 +15,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class UploadExample {
     /*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/upload.html"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/upload.html"
 	TestCase3: Upload the file
-	TestCase4: Close the project.
+	TestCase4: Quit the project.
 	*/
 	public static void main(String[] args) {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.leafground.com/pages/upload.html");
+		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/upload.html");
 		
 		//Upload the file
 		WebElement uploadFile = driver.findElement(By.xpath("//*[@id=\"mydiv\"]/input"));
 		uploadFile.sendKeys("C:\\Users\\Acer\\Downloads\\testleaf.xlsx");
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 		
 	}
