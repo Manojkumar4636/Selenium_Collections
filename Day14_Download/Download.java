@@ -14,11 +14,11 @@ public class DownloadExample {
 	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/download.html"
 	TestCase3: Click and Download the file
 	TestCase4: Then file is Downloaded or Not check it
-	TestCase5: Close the project
+	TestCase5: Quit the project
 	*/
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/download.html");
 		
@@ -39,8 +39,8 @@ public class DownloadExample {
 			}
 		}
 		
-		//Close the project
-		//driver.quit();
+		//Quit the project
+		driver.quit();
 		
 	}
 
