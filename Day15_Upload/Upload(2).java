@@ -8,16 +8,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class AnotherUploadExample {
     /*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "https://the-internet.herokuapp.com/upload"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/upload.html"
 	TestCase3: Upload the file
 	TestCase4: Click the Upload button
 	TestCase5: Close the project.
 	*/
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://the-internet.herokuapp.com/upload");
+		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/upload.html");
 		
 		//Upload the file
 		WebElement uploadFile = driver.findElement(By.id("file-upload"));
@@ -27,7 +27,7 @@ public class AnotherUploadExample {
 		WebElement uploadButton = driver.findElement(By.id("file-submit"));
 		uploadButton.click();
 		
-		//Close the project.
+		//Quit the project.
 		driver.quit();
 	}
 }
