@@ -8,17 +8,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class InteractImageExample {
     /*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/Image.html"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Image.html"
 	TestCase3: Click on this image to go home page
 	TestCase4: Return Previous page go
 	TestCase5: Find that image is broken or not
-	TestCase6: Close the project
+	TestCase6: Quit the project
 	*/
 	public static void main(String[] args) throws InterruptedException {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.leafground.com/pages/Image.html");
+		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Image.html");
 		
 		//Click on this image to go home page
 		WebElement clickImg = driver.findElement(By.xpath("//*[@id=\"contentblock\"]/section/div[1]/div/div/img"));
