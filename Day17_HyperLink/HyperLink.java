@@ -10,20 +10,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class HyperLinkExample {
     /*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/Link.html"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Link.html"
 	TestCase3: Click the link goto Home page
 	TestCase4: Find where am supposed to go without clicking me?
 	TestCase5: Find link is broken or Not
 	TestCase6: Go to Home Page (Interact with same link name)
 	TestCase7: How many links are available in this page?
-	TestCase8: Close the project.
+	TestCase8: Quit the project.
 	*/
 	public static void main(String[] args) {
 		
 
 	System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
-	driver.navigate().to("http://www.leafground.com/pages/Link.html");
+	driver.navigate().to("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Link.html");
 		
 	//Click the link goto Home page
 	WebElement clickLink1 = driver.findElement(By.linkText("Go to Home Page"));
@@ -57,7 +57,7 @@ public class HyperLinkExample {
 	    int size = linkTagCount.size();
 	    System.out.println("Total no of links: "+size);
 	    
-	    //Close the project
+	    //Quit the project
 	    driver.quit();
 	}
 
