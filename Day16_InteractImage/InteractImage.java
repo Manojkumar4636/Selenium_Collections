@@ -38,7 +38,7 @@ public class InteractImageExample {
 			System.out.println("The image is not broken");
 		}
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 		
 	}
