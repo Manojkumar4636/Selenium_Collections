@@ -9,15 +9,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CalenderExample {
 	/*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/Calendar.html"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Calendar.html"
 	TestCase3: Select 10th day of following month
-	TestCase4: Close the project
+	TestCase4: Quit the project
 	 */	
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.navigate().to("http://www.leafground.com/pages/Calendar.html");
+		driver.navigate().to("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Calendar.html");
 
 		//Select 10th day of following month
 		WebElement date = driver.findElement(By.id("datepicker"));
@@ -30,7 +30,7 @@ public class CalenderExample {
 		WebElement click = driver.findElement(By.xpath("//a[contains(text(),'10')]"));
 		click.click();
 
-		//Close the project
+		//Quit the project
 		driver.quit();
 	}
 }
