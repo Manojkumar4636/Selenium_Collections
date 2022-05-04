@@ -13,18 +13,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TableExample {
     /*
 	TestCase1: Open Chrome Browser.
-	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/table.html"
+	TestCase2: Visit the WebSite: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/table.html"
 	TestCase3: Get the count of number of columns
 	TestCase4: Get the count of number of rows
 	TestCase5: Get the progress value of 'Learn to interact with Elements'
 	TestCase6: Check the vital task for the least completed progress
-	TestCase7: Close the project.
+	TestCase7: Quit the project.
 	*/
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.navigate().to("http://www.leafground.com/pages/table.html");
+		driver.navigate().to("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/table.html");
 		
 		//Get the count of number of columns
 		List<WebElement> column = driver.findElements(By.tagName("th"));
@@ -49,11 +49,11 @@ public class TableExample {
 		String getPercentage = percentage.getText();
 		System.out.println("Percentage is: "+getPercentage);
 		
-        //Check the vital task for the least completed progress
+                //Check the vital task for the least completed progress
 		WebElement check = driver.findElement(By.xpath("//*[@id=\"table_id\"]/tbody/tr[4]/td[3]/input"));
 		check.click();
 		
-		//Close the project
+		//Quit the project
 		driver.quit();	
 	}
 }
