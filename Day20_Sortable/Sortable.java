@@ -13,11 +13,11 @@ public class SortableExample {
 	TestCase1: Open Chrome Browser.
 	TestCase2: Visit the WebSite: "http://www.leafground.com/pages/sortable.html"
 	TestCase3: Move the last index value from first index
-	TestCase4: Close the project
+	TestCase4: Quit the project
 	*/
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHOMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://www.leafground.com/pages/sortable.html");
 
@@ -29,7 +29,7 @@ public class SortableExample {
 		Actions action = new Actions(driver);
 		action.dragAndDrop(from, to).build().perform();
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 		
 	}
