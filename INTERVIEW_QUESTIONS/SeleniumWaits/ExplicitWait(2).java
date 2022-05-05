@@ -1,3 +1,25 @@
+/*
+2) Explicit Wait
+----------------
+=> It is applicable to only one locator (or) one WebElement.
+=> The Explicit Wait in Selenium is used to tell the webdriver to wait for certain conditions (Expected Conditions).
+
+    SYNTAX
+    -------
+    WebDriverWait wait = new WebDriverWait(Webdriver ref, 30);
+    wait.until(Condition to be met);
+     
+     Example:
+     --------
+    WebDriverWait wait = new WebDriverWait(driver, 20);
+    WebElement profile = wait.until(ExpectedConditions
+			     .elementToBeClickable(By.xpath("//*[@id=\"fadein\"]/div[1]/div/div[3]/ul/li[4]/a")));
+
+
+*/
+
+
+
 package com.learn.selenium.explicitwait;
 
 import java.util.concurrent.TimeUnit;
@@ -14,8 +36,8 @@ public class ExplicitWaitExample {
 	TestCase1: Open Chrome Browser.
 	TestCase2: Visit the WebSite: "https://www.phptravels.net/login"
 	TestCase3: Login the Website( UserName: "user@phptravels.com", Password: "demouser" )
-    TestCase4: Then Click MY PROFILE
-    TestCase5: Close the project
+        TestCase4: Then Click MY PROFILE
+        TestCase5: Quit the project
 	*/
 	public static void main(String[] args) {
 		
@@ -42,10 +64,11 @@ public class ExplicitWaitExample {
 		//Create WebDriverWait instance (object) => (driver, seconds)
 		//wait.until(Condition to be met)
 				WebDriverWait wait = new WebDriverWait(driver, 20);
-				WebElement profile = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"fadein\"]/div[1]/div/div[3]/ul/li[4]/a")));
+				WebElement profile = wait.until(ExpectedConditions
+								.elementToBeClickable(By.xpath("//*[@id=\"fadein\"]/div[1]/div/div[3]/ul/li[4]/a")));
 				profile.click();
 				
-		//Close the Project
+		//Quit the Project
 		driver.quit();
 		
 	}
