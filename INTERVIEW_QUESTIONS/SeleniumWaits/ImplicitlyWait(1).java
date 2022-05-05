@@ -1,3 +1,31 @@
+/*
+Wait
+-----
+
+Static Wait
+------------
+Thread.Sleep(ms) 5000ms is a 5Sec
+
+Dynamic Wait
+------------
+1) Implicit Wait
+2) Explicit Wait
+3) Fluent Wait
+
+1) Implicit Wait
+-----------------
+=> Implicit Wait is applicable for all your locators.
+=> The Implicit Wait in Selenium is used to tell the webdriver to wait for a certain amount of time before it throws a Exceptions.
+=> Default time is "0".
+=> Once we set the time, the webdriver will wait for the element for that time before throwing an Exception.
+	
+	
+	SYNTAX
+	-------
+	driver.manage().timeOuts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+	
+*/
+
 package com.learn.selenium.implicitlywait;
 
 import java.util.concurrent.TimeUnit;
@@ -13,7 +41,7 @@ public class ImplicitlyWaitExample {
 	TestCase2: Visit the WebSite: "https://www.phptravels.net/login"
 	TestCase3: Login the Website( UserName: "user@phptravels.com", Password: "demouser" )
         TestCase4: Then Click MY PROFILE
-        TestCase5: Close the project
+        TestCase5: Quit the project
 	 */
 	public static void main(String[] args) {
 
@@ -40,7 +68,7 @@ public class ImplicitlyWaitExample {
 		WebElement clickProfile = driver.findElement(By.xpath("//*[@id=\"fadein\"]/div[1]/div/div[3]/ul/li[4]/a"));
 		clickProfile.click();
 
-		//Close the Project
+		//Quit the Project
 		driver.quit();
 
 	}
