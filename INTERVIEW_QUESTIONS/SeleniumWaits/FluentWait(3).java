@@ -1,3 +1,23 @@
+/*
+3) FluentWait
+--------------
+=> It checks for the webelement at regular intervals until the element is found (or)timeOut happens.
+
+   SYNTAX
+   -------
+   Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+				.withTimeout(Duration.ofSeconds(20))
+				.pollingEvery(Duration.ofSeconds(3))
+				.ignoring(NoSuchElementException.class);
+   
+   WebElement profile = wait.until(new Function<WebDriver, WebElement>() {
+			public WebElement apply(WebDriver driver) {
+				return driver.findElement(By.xpath("//*[@id=\"fadein\"]/div[1]/div/div[3]/ul/li[4]/a"));
+			}
+
+*/
+
+
 package com.learn.selenium.fluentwait;
 
 import java.time.Duration;
@@ -46,7 +66,7 @@ public class FluentWaitExampe {
 
 		profile.click();
 
-		//Close the Project
+		//Quit the Project
 		driver.quit();
 	}
 }
