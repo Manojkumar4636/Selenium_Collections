@@ -7,7 +7,7 @@ public class AuthenticationExample {
     /*
 	TestCase1: Open Chrome Browser.
 	TestCase2: Visit the WebSite: "https://the-internet.herokuapp.com/digest_auth"
-	TestCase3: Login the Website ( UserName: "admin", Password: "admin" )
+	TestCase3: Login the WebSite ( UserName: "admin", Password: "admin" )
 	TestCase4: Quit the project
 	*/
 	public static void main(String[] args) throws InterruptedException {
