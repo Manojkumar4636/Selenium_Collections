@@ -8,18 +8,19 @@ public class AuthenticationExample {
 	TestCase1: Open Chrome Browser.
 	TestCase2: Visit the WebSite: "https://the-internet.herokuapp.com/digest_auth"
 	TestCase3: Login the Website ( UserName: "admin", Password: "admin" )
-	TestCase4: Close the project
+	TestCase4: Quit the project
 	*/
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROMEDRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		
 		//Passing the UserName, Password in the URL
 		//Example : https://username:password@example.com
+		
 		driver.get("https://admin:admin@the-internet.herokuapp.com/digest_auth");
 		
-		//Close the Project
+		//Quit the Project
 		driver.quit();
 	}
 
