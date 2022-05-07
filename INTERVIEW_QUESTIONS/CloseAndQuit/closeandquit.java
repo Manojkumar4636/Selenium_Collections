@@ -7,9 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CloseAndQuit {
 	
+	//Close  is a only driver foucused window will be closed
+	//Quit is a terminte the total driver
+	
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROME DRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/Window.html");
 
@@ -25,7 +28,7 @@ public class CloseAndQuit {
 		//Close the browser window that the driver has foucus of
 		driver.close();
 		
-		//close the project
+		//Quit the project
 		//driver.quit();
 		
 
