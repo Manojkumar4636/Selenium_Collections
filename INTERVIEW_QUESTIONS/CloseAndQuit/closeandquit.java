@@ -14,7 +14,7 @@ public class CloseAndQuit {
 		
 		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROME DRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.leafground.com/pages/Window.html");
+		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Window.html");
 
 		//Parent window identity store it
 		String oldWindow = driver.getWindowHandle();
