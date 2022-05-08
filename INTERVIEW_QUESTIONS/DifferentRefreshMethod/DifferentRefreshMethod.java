@@ -46,7 +46,7 @@ public class RefreshExample {
 		robot.keyRelease(KeyEvent.VK_F5);
 		*/
 		
-		//QUIT the driver
+		//Quit the driver
 		driver.quit();
 		
 	}
