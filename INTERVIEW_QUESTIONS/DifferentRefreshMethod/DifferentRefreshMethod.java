@@ -16,7 +16,7 @@ public class RefreshExample {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROME DRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.google.co.in");
 		
@@ -45,6 +45,9 @@ public class RefreshExample {
 		robot.keyPress(KeyEvent.VK_F5);
 		robot.keyRelease(KeyEvent.VK_F5);
 		*/
+		
+		//QUIT the driver
+		driver.quit();
 		
 	}
 }
