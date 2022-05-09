@@ -10,7 +10,7 @@ public class GetAndNavgateExample {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROME DRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		
 		//get will not store the history
@@ -31,7 +31,7 @@ public class GetAndNavgateExample {
 		Thread.sleep(2000);
 		driver.navigate().refresh();
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 
 	}
