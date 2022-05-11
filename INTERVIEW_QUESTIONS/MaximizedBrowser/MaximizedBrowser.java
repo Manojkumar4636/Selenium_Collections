@@ -11,7 +11,7 @@ public class MaxmizeExample {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROME DRIVER PATH");
 		/*
 		1st Method 
 		ChromeOptions chromeOptions = new ChromeOptions();
@@ -29,8 +29,8 @@ public class MaxmizeExample {
 		driver.manage().window().setSize(dimension);
 		*/
 		
-	
-	
+		//Quit the browser
+		driver.quit();
 	}
 
 }
