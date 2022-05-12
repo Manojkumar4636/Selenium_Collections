@@ -22,7 +22,7 @@ public class ScreenShotExample {
 
 	public static void main(String[] args) throws IOException, AWTException  {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROME DRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://www.leafground.com/pages/Alert.html");
 		
@@ -45,6 +45,9 @@ public class ScreenShotExample {
 		File file = new File("D://manoj.png");
 		ImageIO.write(createScreenCapture, "png", file);
 		*/
+		
+		//Quit the browser
+		driver.quit();
 	}
 
 }
