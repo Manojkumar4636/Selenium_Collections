@@ -24,7 +24,7 @@ public class ScreenShotExample {
 		
 		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROME DRIVER PATH");
 		WebDriver driver = new ChromeDriver();
-		driver.navigate().to("http://www.leafground.com/pages/Alert.html");
+		driver.navigate().to("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/Alert.html");
 		
 		//1st Method - Take a screenshot here
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
