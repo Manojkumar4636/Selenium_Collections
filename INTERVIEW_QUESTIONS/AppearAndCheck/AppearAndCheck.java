@@ -6,16 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AppearExample {
-	  /*
+	        /*
 		TestCase1: Open Chrome Browser.
 		TestCase2: Visit Google Home Page: "https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/appear.html"
 		TestCase3: One of them is disappeared and it will appears after few seconds, And you get that text.
-		TestCase4: Close the project.
+		TestCase4: Quit the project.
 		*/
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "ENTER YOUR CHROME DRIVER PATH");
 		WebDriver driver = new ChromeDriver();
 		//get() - To load the URL to WebPage
 		driver.get("https://manojkumar4636.github.io/Selenium_Practice_Hub/pages/appear.html");
@@ -29,7 +29,7 @@ public class AppearExample {
 		String text = findElement.getText();
 		System.out.println("I will get the Text: "+text);
 		
-		//Close the project
+		//Quit the project
 		driver.quit();
 	}
 }
